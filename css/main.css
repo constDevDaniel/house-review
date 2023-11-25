@@ -1,0 +1,61 @@
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 1rem;
+	font-size: 1.5rem;
+}
+
+.container-carrosel-cards {
+	width: 80%;
+	height: 30rem;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	margin: 2rem;
+	padding: 3.2rem 7.2rem;
+	overflow: hidden;
+	background-color: #acbef2;
+	border-radius: 15px;
+}
+
+section .card {
+	width: 30rem;
+	height: 25rem;
+	max-width: 22rem;
+	background-color: #acbef2;
+	border-radius: 0.5rem;
+	/* box-shadow: 1px 9px 5rem 3px rgba(0, 0, 0, 0.5); */
+	gap: 2rem;
+	overflow: hidden;
+}
+
+section .card .content-image img {
+	height: 12rem;
+	width: 100%;
+	border-radius: 0.5rem 0 0 0;
+	object-fit: cover;
+}
+
+.content-image img:hover {
+	transform: scale(1.06);
+	transition: all 0.3s ease-in-out;
+}
+
+section .card .content-score {
+	padding: 1rem;
+}
+
+section .card .content-score h2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
