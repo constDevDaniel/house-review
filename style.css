@@ -40,7 +40,6 @@ input {
 body {
 	font-size: 1.6rem;
 	background-color: var(--color-base-white);
-	/* color: var(--color-base-gray-900); */
 	display: grid;
 	grid-template-rows: max-content 1fr max-content;
 	height: 100vh;
@@ -48,84 +47,10 @@ body {
 }
 
 main {
-	overflow-y: scroll;
+	overflow: scroll;
 	background-color: var(--color-base-gray-100);
 }
 
-nav {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding: 0.4rem 3rem;
-	width: 100%;
-	gap: 7.2rem;
-	font-weight: 700;
-	background-color: var(--primary-color);
-}
-
-nav ul {
-	display: flex;
-	gap: 7rem;
-	font-size: 1.6rem;
-}
-
-nav .logo {
-	width: 10rem;
-	height: 5rem;
-}
-
-nav ul li a {
-	transition: opacity 0.4s;
-	font-weight: 300;
-	color: white;
-	opacity: 0.8;
-	width: 100%;
-}
-
-nav ul li a:hover,
-nav ul li a:active {
-	opacity: 1;
-	transition: opacity 0.4s;
-	font-weight: 700;
-}
-
-nav ul li a::after {
-	content: "";
-	width: 0;
-	height: 2px;
-	background-color: white;
-	display: block;
-	position: relative;
-	bottom: -1rem;
-	left: 0;
-	transition: width 0.4s;
-}
-
-nav ul li a:hover::after {
-	width: 110%;
-}
-
-.input-wrapper label {
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-}
-
-.input-wrapper input {
-	width: 30rem;
-	padding: 0.7rem;
-	background-color: var(--color-base-gray-100);
-	border-radius: 0.6rem;
-	font-size: 1.6rem;
-	font-weight: 600;
-}
-
-.input-wrapper input::placeholder {
-	opacity: 0.7;
-	font-weight: 300;
-	font-size: 1.4rem;
-}
 
 /* galeria */
 main .container {
@@ -155,10 +80,16 @@ main h1 {
 
 .item:hover {
 	cursor: pointer;
-	box-shadow: 13px 12px 15px -5px rgba(0, 0, 0, 0.64);
+	box-shadow: 13px 12px 15px -8px rgba(0, 0, 0, 0.64);
 	filter: contrast(101%) saturate(200%);
 	transform: scale(1.02);
-	transition: all 400ms ease-out;
+	transition: all 400ms ease;
+}
+
+.item:hover img{
+	filter: contrast(101%) saturate(150%);
+	transform: scale(1.08);
+	transition: all 400ms ease;
 }
 
 .item img {
@@ -166,12 +97,6 @@ main h1 {
 	aspect-ratio: 16/9;
 	object-fit: cover;
 	transition: all 400ms ease-out;
-}
-
-
-.item img:hover {
-	filter: contrast(101%) saturate(200%);
-	transform: scale(1.1);
 }
 
 .details {
