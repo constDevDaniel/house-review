@@ -8,7 +8,13 @@
 	list-style: none;
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+}
+
+.swiper-pagination,
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 15px;
+	color: #fff;
 }
 
 :root {
@@ -42,8 +48,6 @@ body {
 	height: 100vh;
 	width: 100vw;
 }
-
-
 
 header {
 	--startY: -100%;

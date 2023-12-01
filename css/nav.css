@@ -6,15 +6,14 @@ nav {
 	align-items: center;
 	padding: 0.6rem 3rem;
 	width: 100%;
-	height: 10rem;
+	height: 12rem;
 	gap: 7.2rem;
 	font-weight: 700;
 	background-color: var(--primary-color);
 }
 
 nav .logo {
-	width: 28rem;
-	height: 20rem;
+	width: 38rem;
 }
 
 nav ul {
@@ -27,18 +26,17 @@ nav ul {
 }
 
 nav ul li a {
-	transition: opacity 0.4s;
-	font-size: 1.7rem;
+	transition: all 0.4s;
+	font-size: 2rem;
 	font-weight: 300;
 	color: white;
 	opacity: 0.8;
-	width: 100%;
 }
 
-nav ul li a:hover{
-	font-size: 1.75rem;
+nav ul li a:hover {
+	font-size: 2.1rem;
 	opacity: 1;
-	transition: opacity 0.4s;
+	transition: opacity 400ms;
 	font-weight: 700;
 }
 
@@ -51,11 +49,11 @@ nav ul li a::after {
 	position: relative;
 	bottom: -1rem;
 	left: 0;
-	transition: width 0.3s;
+	transition: width 400ms;
 }
 
 nav ul li a:hover::after {
-	width: 110%;
+	width: 100%;
 }
 
 .input-wrapper label {
@@ -67,7 +65,7 @@ nav ul li a:hover::after {
 
 .input-wrapper input {
 	width: 30rem;
-	padding: 0.7rem;
+	padding: 1.2rem;
 	background-color: var(--color-base-gray-100);
 	border-radius: 0.6rem;
 	font-size: 1.6rem;
