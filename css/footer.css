@@ -48,9 +48,9 @@ footer .overview a {
 footer .overview a:hover {
 	font-weight: 700;
 	opacity: 1;
-	/* font-size: 1.8rem; */
 	transform: scale(1.11);
 	border-bottom: 1px solid white;
+	transition: all 500ms;
 }
 
 footer .social-links {
