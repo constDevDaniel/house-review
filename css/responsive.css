@@ -1,0 +1,45 @@
+@media only screen and (max-width: 600px) {
+    /* Seu código CSS para telas pequenas aqui */
+
+    /* Por exemplo, se você tem uma classe .container que precisa ser ajustada: */
+    nav {
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    nav .logo {
+        width: 200px;
+    }
+
+    nav .nav-links li a {
+        width: 10px;
+    }
+    
+    .container {
+        width: 100vw;
+    }
+
+    footer > a > img {
+        width: 40rem;
+    }
+
+    footer .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer .social-links .social-link img {
+        width: 50px;
+    }
+
+    footer .overview a {
+        font-size: 1.6rem;
+    }
+
+
+
+}
